@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding Example</title>
+    <style>
+        /* Add padding to all sides of an element */
+        .box {
+            padding: 20px;
+            border: 1px solid black;
+        }
+
+        /* Add different padding for each side */
+        .box2 {
+            padding-top: 10px;
+            padding-right: 15px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            border: 1px solid black;
+        }
+
+        /* Add padding with shorthand (top, right, bottom, left) */
+        .box3 {
+            padding: 10px 15px 10px 15px;
+            border: 1px solid black;
+        }
+
+        /* Add padding with 2 values (top/bottom, left/right) */
+        .box4 {
+            padding: 10px 15px;
+            border: 1px solid black;
+        }
+
+        /* Add padding with 3 values (top, left/right, bottom) */
+        .box5 {
+            padding: 10px 15px 20px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        This is a box with 20px padding on all sides.
+    </div>
+
+    <div class="box2">
+        This is a box with custom padding: 10px top, 15px right and left, and 10px bottom.
+    </div>
+
+    <div class="box3">
+        This is a box with shorthand padding: 10px top, 15px right and left, 10px bottom.
+    </div>
+
+    <div class="box4">
+        This box has 10px padding on the top and bottom, and 15px padding on left and right.
+    </div>
+
+    <div class="box5">
+        This box has 10px padding on top, 15px on the sides, and 20px on the bottom.
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Grid Cards</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 20px;
+            margin: 0;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-header {
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .card-content {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card-content p {
+            font-size: 16px;
+            color: #777;
+            line-height: 1.5;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card-footer .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff6347;
+        }
+
+        .card-footer button {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-footer button:hover {
+            background-color: #e5533d;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h2>Beautiful Chair</h2>
+            </div>
+            <div class="card-content">
+                <p>Comfortable and stylish chair made with high-quality materials. Perfect for your living room or office space.</p>
+            </div>
+            <div class="card-footer">
+                <span class="price">$199.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Modern Table</h2>
+            </div>
+            <div class="card-content">
+                <p>Elegant and modern table crafted with the finest wood. Perfect addition to your dining room or office.</p>
+            </div>
+            <div class="card-footer">
+                <span class="price">$299.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Cozy Sofa</h2>
+            </div>
+            <div class="card-content">
+                <p>Comfortable sofa with soft cushions. Available in a variety of colors and fabrics for your comfort.</p>
+            </div>
+            <div class="card-footer">
+                <span class="price">$499.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Desk Lamp</h2>
+            </div>
+            <div class="card-content">
+                <p>Minimalistic desk lamp with adjustable brightness. Ideal for reading or working at your desk.</p>
+            </div>
+            <div class="card-footer">
+                <span class="price">$59.99</span>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
